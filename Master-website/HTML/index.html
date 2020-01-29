@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Title-->
+    <title>Adri Roos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Description-->
+    <meta name="description" content="Adri is a highly creative, modern, visually stunning and Bootstrap responsive multipurpose portfolio.">
+    <!--Keywords-->
+    <meta name="keywords" content="creative, modern, clean, bootstrap responsive, html5, css3, portfolio, blog, agency, templates, multipurpose, one page, corporate, start-up, studio, branding, designer, freelancer, carousel, parallax, photography, personal, masonry, grid, coming soon, faq">
+    <meta charset="UTF-8">
+     <!--Links to Style or Fonts-->   
+    <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Display&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href = "../Style/MainStyle.css">
+    <link rel = "stylesheet" href = "../Style/Style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide&display=swap" rel="stylesheet">
+</head>
+<body>
+        
+        
+                <!-- Navigation -->
+                <div class="topnav" id="myTopnav">
+                        <a href="index.html" class="active">Home</a>
+                        <a href="QandAs.html">Q&As</a>
+                        <a href="ContactMe.html">Contact</a>
+                        <a href="AboutMe.html">About</a>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                          <i class="fa fa-bars"></i>
+                        </a>
+                      </div>
+                <!-- Top Container -->
+                <section class="top-container" class="fade-scroll">
+                  <header class="showcase">
+                    <h1>The Story behind the legend</h1>
+                    <p>Like all good things, you have to work for it. Same goes for Adri. Work hard and get results!</p>
+                    <a href="About.html" class="btn">Read More</a>
+                  </header>
+                  <div class="top-box top-box-a" class="fade-scroll">
+                    <button>
+                    <a href="https://www.linkedin.com/in/adriana-roos-b92658184/" id="btn"><i class="fab fa-linkedin fa-7x"></i></a>
+                  </button>
+                  </div>
+                
+                
+                  <div class="top-box top-box-b" class="fade-scroll">
+                      <button>
+                    <a href="https://github.com/adrimerican" id="btn"><i class="fab fa-github fa-7x"></i></a>
+                      </button>
+                  </div>
+                
+                </section>
+            
+                <!-- Boxes Section -->
+                <section class="boxes" class="fade-scroll">
+                  <div class="box">
+                    <i class="fas fa-question-circle fa-4x" link = ""></i>
+                    <h3>Did you know...</h3>
+                    <p>I can speak four languages as well as being able to understand 3 more!</p>
+                  </div>
+                  <div class="box" class="fade-scroll">
+                    <i class="fas fa-globe fa-4x" link = ""></i>
+                    <h3>Travel History</h3>
+                    <p>Travelling is a passion of mine and would jump on any opportunity to learn a new culture and it's people customs.</p>
+                  </div>
+                  <div class="box" class="fade-scroll">
+                    <i class="fas fa-cog fa-4x" link = ""></i>
+                    <h3>Personal Development</h3>
+                    <p>Yes, I'm a work in progress. And yes, I messes up but I try my hardest. </p>
+                  </div>
+                  <div class="box" class="fade-scroll">
+                    <i class="fas fa-user-injured fa-4x"></i>
+                    <h3>Support</h3>
+                    <p>I will always need hugs and hot cocoa on bad days. If it's a good day, just humour me.</p>
+                  </div>
+                </section>
+            
+                <!-- Info Section -->
+                <section class="info" class="fade-scroll">
+                
+                  <div>
+                    <h2>Understanding Adri in detail</h2>
+                    <p>The complexity of Adri is a thing of wonder. She is not a simply understood person. Like an onion, she has layers, like an onion. Mysterious. Elusive and complex. To understand her you must dive deeper into her psyche. To her core.</p>
+                    <a href="AboutMe.html" class="btn">Learn More</a>
+                  </div>
+                </section>
+            
+                <!-- Portfolio -->
+                <section class="portfolio" class="fade-scroll">
+                  <img src="IMG/babyboy.jpg" alt="">
+                  <img src="IMG/berlin.jpg"" alt="">
+                  <img src="IMG/drawing.jpg" alt="">
+                  <img src="IMG/giantscauseway.jpg" alt="">
+                  <img src="IMG/grumpycat.jpg" alt="">
+                  <img src="IMG/laying.jpg" alt="">
+                  <img src="IMG/line.jpg" alt="">
+                  <img src="IMG/pothead.jpg" alt="">
+                  <img src="IMG/roo.jpg" alt="">
+                </section>
+            
+                <!-- Footer -->
+                <footer>
+                  <p>Adri Corp &copy; 2020</p>
+                </footer>
+            
+              </div>
+              </div>
+              <!-- Wrapper Ends -->
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+              <script>
+
+                $(function() {
+
+                  var documentEl = $(document),
+                      fadeElem = $('.fade-scroll');
+
+                      documentEl.on('scroll', function(){
+                        var currScrollPos = documentEl.scrollTop();
+
+                        fadeElem.each(function(){
+                          var $this = $(this),
+                              elemOffsetTop = $this.offset().top;
+                              if (currScrollPos > elemOffsetTop) $this.css('opacity', 1 -(currScrollPos-elemOffsetTop)/400);
+                        })
+                      })
+                })
+              </script>
+</body>
+</html>
